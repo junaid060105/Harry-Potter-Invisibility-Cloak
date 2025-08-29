@@ -2,12 +2,10 @@
 import cv2 
 
 #creating a videocapture obj
-#this is my phone's camera (webcam) 
+#this is my webcam 
 #0 represents the default camera i.e. webcam
 #cap is the object that allows us to access the camera
 cap = cv2.VideoCapture("0")
-address = "https://192.168.1.4:8080/video"
-cap.open(address)
 
 #getting the background image
 #it keeps taking pictures from webcam - ret(return) says if it worked, background is the picture.
@@ -29,3 +27,4 @@ cap.release()
 
 #destroy all the files.
 cv2.destroyAllWindows()
+
