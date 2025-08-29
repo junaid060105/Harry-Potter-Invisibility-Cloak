@@ -4,9 +4,6 @@ import cv2
 import numpy as np
 
 cap = cv2.VideoCapture("0")
-address = "https://192.168.1.4:8080/video"
-cap.open(address)
-
 background = cv2.imread('./image.jpg')
 
 while cap.isOpened():
@@ -55,4 +52,5 @@ while cap.isOpened():
 cap.release()
 
 cv2.destroyAllWindows()
+
         
